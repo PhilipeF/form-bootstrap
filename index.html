@@ -9,9 +9,38 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <title>Formulário com Bootstrap</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
 </head>
-<body>
-<h1>Testando</h1>
+
+<body class="d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="mb-4">Formulário com Bootstrap</h2>
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label" for="nome">Seu nome:</label>
+                        <input class="form-control" type="text" id="nome" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="email">E-mail:</label>
+                        <input class="form-control" type="email" id="email" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="telefone">Telefone:</label>
+                        <input class="form-control" type="number" id="telefone" />
+                    </div>
+                    <button class="btn btn-success">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
